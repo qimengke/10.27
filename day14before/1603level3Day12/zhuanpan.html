@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*img{transition: .2s linear;}*/
+		</style>
+	</head>
+	<body>
+		<img src="img/_temp/chrome2.png" id="img"/>
+	
+		<script type="text/javascript" src="js/lib/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/lib2/jQueryRotate.2.2.js" ></script>
+		<script type="text/javascript" src="js/lib2/jquery.easing.min.js" ></script>
+		<script type="text/javascript">
+			$("#img").hover(function(){
+//				$("#img").rotate(180);
+				$("#img").rotate({
+					duration:6000,
+					angle:0,
+					animateTo:180,
+					callback:function(){
+//						alert("老师还帅");
+					}
+				})
+			},function(){
+			$("#img").rotate({
+					angle:180,
+					animateTo:0
+				})
+			})
+			
+		</script>
+	</body>
+</html>

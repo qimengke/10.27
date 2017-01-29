@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/page.css" />
+		<link rel="stylesheet" href="css/icons/iconfont.css" />
+		<style>
+			.Z_prolist{width: 100%;height: 100%;display: -webkit-box;-webkit-box-orient: vertical;}
+			.Z_prolist header{width: 100%;height: 46px;line-height: 46px;background-color: orange;}
+			.Z_prolist footer{width: 100%;height: 32px;line-height: 32px;background-color: deepskyblue;}
+			.Z_prolist .wrapper{-webkit-box-flex: 1;overflow: hidden;position: relative;width: 100%;}
+			.Z_prolist .imgBox{width: 100px;height: 100px;overflow: hidden;}
+			.Z_prolist .imgBox img{width: 100%;}
+			
+			.Z_prolist .main_nav{height: 36px;width: 100%;line-height: 36px;background-color: darkred;color: #fff;}
+			.Z_prolist .iconfontGroup{width: 100%;white-space: nowrap;font-size: 26px;}
+			.Z_prolist .iconbox{margin-left: 30px;}
+		</style>
+	</head>
+	<body>
+		<div class="Z_prolist">
+			<header id="title">标题</header>
+			<nav class="main_nav" id="navs">
+				<div class="iconfontGroup" id="iconfontGroup"></div>
+			</nav>
+			<div class="wrapper" id="wrapper">
+				<div class="scrollbar" id="scrollbar">
+					<!--<div class="prodbox">
+						<div class="imgbox"><img src="" /> </div>
+						<div class="proname"></div>
+						<div class="price"></div>
+					</div>-->
+				</div>
+			</div>
+			<footer></footer>
+		</div>
+		<script type="text/javascript" src="js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/lib/iscroll-min.js" ></script>
+		<script type="text/javascript" src="js/proList.js" ></script>
+	</body>
+</html>
